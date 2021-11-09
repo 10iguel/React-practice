@@ -41,11 +41,10 @@ class App extends React.Component {
         if (!this.state.errorMessage && this.state.lat) {
             return <SeasonDisplay lat={this.state.lat}/>
         }
-        return <Spinner/>
+        return <Spinner message="Please allow the location"/>
 
     }
 }
-
 
 ReactDOM.render(
     <App/>,
@@ -53,34 +52,4 @@ ReactDOM.render(
 )
 
 
-// First practices with react
-
-//
-// const App = () => {
-//     return (
-//         <div className="ui container comments">
-//             <ApprovalCard>
-//                 <div>
-//                     <h4>Warning!</h4>
-//                     Are you sure you want to do this
-//                 </div>
-//             </ApprovalCard>
-//
-//             <ApprovalCard>
-//                 <CommentDetail children="Miguel" time="Today at 4:15pm" comment="This is bad"
-//                                avatar={faker.image.avatar()}/>
-//             </ApprovalCard>
-//             <ApprovalCard>
-//                 <CommentDetail children="Man" time="Today at 4:15" comment="This is not good"
-//                                avatar={faker.image.avatar()}/>
-//             </ApprovalCard>
-//             <ApprovalCard>
-//                 <CommentDetail children="Hymn" time="Today at 4:05" comment="Holly Jolly"
-//                                avatar={faker.image.avatar()}/>
-//             </ApprovalCard>
-//         </div>
-//
-//
-//     )
-// }
 
